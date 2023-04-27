@@ -1,0 +1,13 @@
+---
+
+inventory:
+    plugin: SimpleInventory
+    options:
+        host_file: "/home/devasc/labs/devnet-src/liviu/sedinta6/nornir/hosts.yaml"
+        group_file: "/home/devasc/labs/devnet-src/liviu/sedinta6/nornir/groups.yaml"
+        defaults_file: "/home/devasc/labs/devnet-src/liviu/sedinta6/nornir/defaults.yaml"
+
+runner: 
+    plugin: threaded
+    options:
+        num_workers: 10

@@ -1,0 +1,34 @@
+---
+
+devices:
+  IOL:
+    connections:
+      cli:
+        ip: 192.168.0.41
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENC{w5PDosOUw5fDog==}'
+        username: student
+      enable:
+        password: '%ENC{w5PDosOUw5fDog==}'
+    os: ios
+    type: ios
+
+  
+
+  CSR1kv:
+    connections:
+      cli:
+        ip: 192.168.0.47
+        protocol: ssh
+    credentials:
+      default:
+        password: cisco
+        username: student
+        #enable:
+        #password: '%ENC{w5PDosOUw5fDog==}'
+    os: iosxe
+    type: iosxe
+
+

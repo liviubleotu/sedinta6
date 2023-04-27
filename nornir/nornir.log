@@ -1,0 +1,41 @@
+2023-04-25 19:40:46,216 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show inventory']} on 2 hosts
+2023-04-25 19:41:06,237 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-04-25 19:43:03,506 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-04-25 19:43:03,508 - nornir.core.task -    ERROR -      start() - Host 'CRS1kv': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "get_bgp_config.py", line 12, in pull_random_info
+    task.run(task=napalm_get, getters=['get_bgp_config'])
+NameError: name 'napalm_get' is not defined
+
+2023-04-25 19:43:03,508 - nornir.core.task -    ERROR -      start() - Host 'IOL': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "get_bgp_config.py", line 12, in pull_random_info
+    task.run(task=napalm_get, getters=['get_bgp_config'])
+NameError: name 'napalm_get' is not defined
+
+2023-04-26 16:50:47,001 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show inventory']} on 2 hosts
+2023-04-26 16:54:57,077 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-04-26 16:55:26,312 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-04-26 16:55:26,315 - nornir.core.task -    ERROR -      start() - Host 'IOL': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "get_bgp_config.py", line 12, in pull_random_info
+    task.run(task=napalm_get, getters=['get_bgp_config'])
+NameError: name 'napalm_get' is not defined
+
+2023-04-26 16:55:26,316 - nornir.core.task -    ERROR -      start() - Host 'CRS1kv': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "get_bgp_config.py", line 12, in pull_random_info
+    task.run(task=napalm_get, getters=['get_bgp_config'])
+NameError: name 'napalm_get' is not defined
+
+2023-04-26 16:56:57,875 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-04-26 17:01:00,860 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-04-26 17:01:20,245 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show inventory']} on 2 hosts
